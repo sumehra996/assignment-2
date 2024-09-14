@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+ /* shared styles */
+.light-01{color: rgba(255, 255, 255, 1);}
+
+.font-sixteen{font-size: 16px;}
+.font-fourteen{font-size: 14px;}
+
+.btn-primary{
+  background-color: #E6533C;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px 10px;
+  border-radius: 46px;
+  text-decoration: none;
+  font-size: 18px;
+}
+ /* nav styles */
+ nav{ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 190px;
+}
+  /* header related styles */
+  header{
+    background-color: #111111;
+  }
+ .fitness{
+  font-size: 36px;
+  font-weight: 800;
+  color: rgba(230, 83, 60, 1);
+ }
+  nav ul li{
+  list-style: none;
+  margin-right: 47px;
+}
+nav ul {display: flex;
+align-items: center;}
+
+nav li a{
+text-decoration: none;
+font-size: 18px;
+}
+/* banner related styles */
+.banner-container{
+  display: flex;
+}
+.banner{
+  padding-bottom: 46px;
+  padding-left: 190px;
+}
+.title{
+  font-size:78px;
+  color:white;
+}
+.banner-desc{
+  font-size: 16px;
+  color: white;
+  padding-bottom: 28px;
+}
+.btn-secondary{
+  background-color: #E6533C;
+  color: rgba(255, 255, 255, 1);
+  padding: 16px 46px;
+  border-radius: 42px;
+  font-size: 18px;
+  margin-right: 14px;
+}
+.btn-third{
+  background-color:#111111;
+  border-color: white;
+  color: rgba(255, 255, 255, 1);
+  padding: 16px 46px;
+  border-radius: 42px;
+  font-size: 18px;
+}
+.banner-img{
+  padding-left: 350px;
+}
+
+.banner-btn{
+margin-left: -113px;
+margin-top: -150px;
+align-items: left;
+}
+
+.blur-btn{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: white;
+  border-radius: 12px;
+ padding: 17px 36px;
+ opacity: calc(20);
+ /* margin-left: 230px;
+ margin-top: -371px; */
+}
+.number{
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+}
+
+.banner-btn-2{
+margin-left: 230px;
+margin-top: -371px;
+}
+.blur-btn-2{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: white;
+  border-radius: 12px;
+ padding: 17px 24px;
+  
+}
+.number-2{ font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-align: left;}
+ 
+ 
