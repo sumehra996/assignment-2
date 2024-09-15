@@ -12,10 +12,12 @@
 .display-flex{display: flex;}
 .font-sixteen{font-size: 16px;}
 .font-fourteen{color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;}
+  font-size: 14px;
+font-weight: 500;}
 .left-align{text-align: left;}
 .btn-primary{
   background-color: #E6533C;
+  border-color: #E6533C;
   color: rgba(255, 255, 255, 1);
   padding: 5px 10px;
   border-radius: 46px;
@@ -81,6 +83,7 @@ font-size: 18px;
   border-radius: 42px;
   font-size: 18px;
   margin-right: 14px;
+  font-weight: 600;
 }
 .btn-third{
   background-color:#3F3F3F;
@@ -159,7 +162,7 @@ margin-bottom: 100px;}
 .habit-title{
   color:white ;
   font-size:48px ;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   margin: 0;
 }
@@ -188,36 +191,40 @@ margin-bottom: 100px;}
 .habit-card-disc{
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
+  font-weight: 500;
   text-align: center;
   padding: 0;
   margin: 5px;
 }
+/* run section styles */
+.run-card{
+  display: flex;
+  gap:165px ;
+  background-color: #3F3F3F;
+  margin: 100px 190px;
+  border-radius: 18px;
+}
+
+.run-title{
+  color:white ;
+  font-size:48px ;
+  font-weight: 800;
+  text-align: left;
+  margin: 0;
+}
+.run-img{
+  width: 366px;
+  height: 312PX;
+  border-radius: 18px;
+}
+.run-disc{
+  margin: 41px 54px;
+}
+.run-img{
+  margin: 30px 0;
+}
 /* responsive layout ----- */
 
-/* @media screen and (max-width: 576px) {
-  nav ul{
-    display: none;
-  }
- nav{
-  margin:0;
-  padding: 0;
- }
-  }
-  .banner-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .banner{
-    padding: 0;
-    margin: 0;
-  }
-  .image{
-    padding: 0;
-    margin: 0;
-  }
-  .blurry{
-    display: none;
-  } */
   @media screen and (max-width: 576px) {
     nav ul{
       display: none;
@@ -226,7 +233,7 @@ margin-bottom: 100px;}
       margin:0;
       padding: 0;
      }
-    .banner-container {
+    .banner-container, .habit-cards, .run-card {
         display: flex;
         flex-direction: column;
       }
@@ -250,14 +257,36 @@ margin-bottom: 100px;}
         margin: 0;
         text-align: center;
       }
-      .habit-cards{
-        display: flex;
-        flex-direction: column;
-      }
+     
       .habit-title, .habit-para{
           text-align: center;
           padding: 0;
+        }
+      .run-card{
+        margin: 100px;
+        padding: 0;
       }
+      .run-title{
+        font-size: 32px;
+      }
+      .run-disc{
+       margin-bottom: -150px;
+      }
+      .run-img{
+        width: 80%;
+      margin-left: 33px;
+      margin-right:36px;
+      margin-bottom:30px;
+      width: 287px;
+      height: 170px;
+      }
+      .run-card {
+       margin: 45px 7px ;
+       padding: 0;
+      }
+      .join-btn{
+        width: 280px;
+        }
   }
     
 
