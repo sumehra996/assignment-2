@@ -9,10 +9,11 @@
   }
  /* shared styles */
 .light-01{color: rgba(255, 255, 255, 1);}
-
+.display-flex{display: flex;}
 .font-sixteen{font-size: 16px;}
-.font-fourteen{font-size: 14px;}
-
+.font-fourteen{color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;}
+.left-align{text-align: left;}
 .btn-primary{
   background-color: #E6533C;
   color: rgba(255, 255, 255, 1);
@@ -20,6 +21,10 @@
   border-radius: 46px;
   text-decoration: none;
   font-size: 18px;
+}
+ 
+body{
+  background-color: #111111;
 }
  /* nav styles */
  nav{ display: flex;
@@ -47,13 +52,18 @@ nav li a{
 text-decoration: none;
 font-size: 18px;
 }
+.shape{
+  font-weight: 500;
+}
 /* banner related styles */
 .banner-container{
   display: flex;
+  background-color: #111111;
 }
 .banner{
   padding-bottom: 46px;
   padding-left: 190px;
+  padding-right: 100px;
 }
 .title{
   font-size:78px;
@@ -73,53 +83,181 @@ font-size: 18px;
   margin-right: 14px;
 }
 .btn-third{
-  background-color:#111111;
+  background-color:#3F3F3F;
   border-color: white;
   color: rgba(255, 255, 255, 1);
   padding: 16px 46px;
   border-radius: 42px;
   font-size: 18px;
 }
-.banner-img{
-  padding-left: 350px;
-}
+
+/* banner image styles */
+.image{margin-left:250px;
+margin-bottom: 100px;}
 
 .banner-btn{
-margin-left: -113px;
-margin-top: -150px;
-align-items: left;
-}
-
-.blur-btn{
-  background-color: rgba(255, 255, 255, 0.1);
-  border: white;
+  background-color: rgba(48, 48, 48, 0.54);
+  border-color: rgba(255, 255, 255, 0.1);
+  opacity: calc(20);
   border-radius: 12px;
- padding: 17px 36px;
- opacity: calc(20);
- /* margin-left: 230px;
- margin-top: -371px; */
+  margin-top:420px;
+  margin-left: -450px;
 }
-.number{
+.desc{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 23px;
+  margin-left: 60px;
+}
+#banner-badge{
+  padding-left: 75px;
+  padding-right: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#number-1{
+  color: white;
   font-size: 24px;
   font-weight: 700;
-  color: white;
-  text-align: left;
-}
-
-.banner-btn-2{
-margin-left: 230px;
-margin-top: -371px;
-}
-.blur-btn-2{
-  background-color: rgba(255, 255, 255, 0.1);
-  border: white;
-  border-radius: 12px;
- padding: 17px 24px;
+  }
+.banner-vid{
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 16px;
   
+
 }
-.number-2{ font-size: 40px;
-  font-weight: 700;
+.banner-btn-2{
+  background-color: rgba(48, 48, 48, 0.54);
+  border-color: rgba(255, 255, 255, 0.1);
+  opacity: calc(10);
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 150px;
+  margin-left: -100px;
+}
+#number-2{
   color: white;
-  text-align: left;}
+  font-size: 40px;
+  font-weight: 800;
+  padding-top:27px;
+  padding-left:24px;
+  padding-right:53px;
+  padding-bottom: 5px;
+}
+#free-vid{
+  padding-left: 24px;
+  padding-bottom:20px;
+}
+/* habits container styles------ */
+.habits-container{
+  margin: 0 198px;
+}
+.habits-desc{
+  padding: 58px 190px;
+  /* padding-bottom: 58px; */
+}
+.habit-title{
+  color:white ;
+  font-size:48px ;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.habit-para{
+  text-align: center;
+  padding: 0;
+}
+.habit-cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding-top: 58px;
+}
+.habit-img{
+  border-radius: 100px;
+}
  
- 
+.habit-card-title{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom:0;
+}
+.habit-card-disc{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  margin: 5px;
+}
+/* responsive layout ----- */
+
+/* @media screen and (max-width: 576px) {
+  nav ul{
+    display: none;
+  }
+ nav{
+  margin:0;
+  padding: 0;
+ }
+  }
+  .banner-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .banner{
+    padding: 0;
+    margin: 0;
+  }
+  .image{
+    padding: 0;
+    margin: 0;
+  }
+  .blurry{
+    display: none;
+  } */
+  @media screen and (max-width: 576px) {
+    nav ul{
+      display: none;
+    }
+    nav{
+      margin:0;
+      padding: 0;
+     }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .banner{
+        padding: 0;
+        margin: 0;
+      }
+      .image{
+        padding: 0;
+        margin: 0;
+      }
+      .blurry{
+        display: none;
+      }
+      .habits-container{
+        padding:0;
+        margin:0;
+      }
+      .habits-disc{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      .habit-cards{
+        display: flex;
+        flex-direction: column;
+      }
+      .habit-title, .habit-para{
+          text-align: center;
+          padding: 0;
+      }
+  }
+    
+
