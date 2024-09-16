@@ -340,8 +340,58 @@ border-radius: 12px;
   text-align: left;
   margin-top: 0;
  }
-
-
+/* ----footer related styles */
+footer{
+  background-color:rgba(255, 255, 255, 0.1) ;
+   padding-bottom: 2px;
+}
+.footer-styles{
+  margin: 0 190px;
+  display: flex;
+}
+.footer-title{
+  padding-top: 66px;
+  padding-bottom: 70px;
+  padding-right: 102px;
+}
+.information{
+  padding-top: 66px;
+  padding-right: 71px;
+  padding-left: 71px;
+}
+.info-title{
+  color:white ;
+  font-size:20px ;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  }
+  .footer-list{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    
+  }
+.horizontal-line{
+  width: 1060px;
+  height:2px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin:0 179px;
+  margin-bottom: 36px;
+}
+.all-rights{
+  color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+}
 /* responsive layout ----- */
 
   @media screen and (max-width: 576px) {
@@ -352,7 +402,7 @@ border-radius: 12px;
       margin:0;
       padding: 0;
      }
-    .banner-container, .habit-cards, .run-card, .BMI-calculator {
+    .banner-container, .habit-cards, .run-card, .BMI-calculator, .footer-styles {
         display: flex;
         flex-direction: column;
       }
@@ -422,6 +472,28 @@ border-radius: 12px;
         .team-card{
           grid-template-columns: repeat(1, 1fr);
           margin: 0;
+        }
+        /* footer */
+        .footer-styles{
+        margin: 0;
+        }
+        .footer-title{
+          padding-left: 20px;
+          padding-right:0;
+          margin-right: 56px;
+          margin-bottom: 0;
+        }
+        .information{
+          padding: 0;
+          margin-left: -20px;
+          margin-top: -50px;
+        }
+        .horizontal-line{
+          width: 200px;
+          height:2px;
+          display: block;
+          background-color: rgba(255, 255, 255, 0.1);
+          margin-bottom: 36px;
         }
   }
     
